@@ -47,6 +47,7 @@ body {
 .nav-link:active,
 .nav-link.active {
   font-size: large;
+  color: white;
 }
 .nav-link {
   transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out;
@@ -57,7 +58,7 @@ body {
 /* Hero Section */
 .heroSec {
   background: linear-gradient(180deg, #121111, #a855f7);
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
 }
@@ -125,6 +126,32 @@ body {
   background-color: rgb(223, 222, 228);
   box-shadow: 0 0 5px var(--primary-color);
 }
+
+/* portfolio */
+.portfolio-page{
+    background-color: #121111;
+}
+.portfolio-img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.portfolio-card{
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    border: 1px solid #121111;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+.portfolio-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 4px 20pxpx rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--primary-color);
+    border-radius: 20px;
+}
+
 
 /* Contact */
 .form-container,
